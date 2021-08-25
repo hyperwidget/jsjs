@@ -1,4 +1,6 @@
 <template>
+  <slot name="explainer" />
+
   <q-separator />
   <q-tabs
     v-model="tab"
