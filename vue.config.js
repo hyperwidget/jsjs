@@ -6,5 +6,5 @@ module.exports = {
     },
   },
   transpileDependencies: ["quasar"],
-  publicPath: process.env.NODE_ENV === "production" ? "/jsjs/" : "/",
+  publicPath: process.env.NODE_ENV === "production" ? "/" : "/",
 };
