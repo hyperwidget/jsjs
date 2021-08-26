@@ -1,13 +1,24 @@
 <template>
-  <h3>Markup</h3>
-  <code-highlight language="html">
-    {{ markup }}
-  </code-highlight>
+  <template v-if="markup">
+    <h3>Markup</h3>
+    <code-highlight language="html">
+      {{ markup }}
+    </code-highlight>
+  </template>
 
-  <h3>JS</h3>
-  <code-highlight language="javascript">
-    {{ js }}
-  </code-highlight>
+  <template v-if="js">
+    <h3>JS</h3>
+    <code-highlight language="javascript">
+      {{ js }}
+    </code-highlight>
+  </template>
+
+  <template v-if="css">
+    <h3>CSS</h3>
+    <code-highlight language="css">
+      {{ css }}
+    </code-highlight>
+  </template>
 </template>
 
 <script lang="ts">
@@ -22,6 +33,7 @@ export default defineComponent({
   props: {
     markup: String,
     js: String,
+    css: String,
   },
   components: {
     CodeHighlight,

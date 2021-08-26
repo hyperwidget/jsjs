@@ -22,7 +22,7 @@
     </q-tab-panel>
 
     <q-tab-panel name="source">
-      <Snippet :js="js" :markup="markup" />
+      <Snippet :js="js" :markup="markup" :css="css" />
     </q-tab-panel>
   </q-tab-panels>
 </template>
@@ -39,6 +39,7 @@ export default defineComponent({
   props: {
     markup: String,
     js: String,
+    css: String,
   },
   setup() {
     return {
