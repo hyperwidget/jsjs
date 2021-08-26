@@ -191,8 +191,10 @@
           <q-card-section>
             <h2 class="q-ma-sm">This is a card</h2>
             <p class="text-red">It has different colours</p>
-            <p class="text-blue">But golly it looks weird at full screen,</p>
-            <p class="text-purple">What's goin' on!?</p>
+            <p class="text-blue">
+              And hot golly it looks dang good in full screen,
+            </p>
+            <p class="text-pink">Such a pretty page</p>
             <q-img
               src="@/assets/butwhy.gif"
               alt="Someone's confused"
